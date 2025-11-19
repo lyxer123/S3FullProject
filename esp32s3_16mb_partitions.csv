@@ -1,0 +1,14 @@
+# Name,   Type, SubType, Offset,  Size, Flags
+# ESP32-S3 16MB Flash Partition Table
+# NVS Partition: for WiFi config and non-volatile storage
+nvs,      data, nvs,     0x9000,  0x6000,
+# OTA Data Partition
+otadata,  data, ota,     0xF000,  0x2000,
+# APP Partition 0 (OTA support)
+app0,     app,  ota_0,   0x20000, 0x3E0000,
+# APP Partition 1 (OTA support)
+app1,     app,  ota_1,   0x400000,0x3E0000,
+# SPIFFS/LittleFS File System
+spiffs,   data, spiffs,  0x7E0000,0x810000,
+# Optional: Factory Data Partition
+# factory,  data, nvs,     0xFF0000,0x10000,

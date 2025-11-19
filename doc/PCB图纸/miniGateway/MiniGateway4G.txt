@@ -1,0 +1,45 @@
+Board Information Report
+Filename     : C:\Users\Administrator\Desktop\MiniGateway4G\MiniGateway4G\MiniGateway4G.PcbDoc
+Date         : 2024/4/8
+Time         : 13:25:10
+Time Elapsed : 00:00:00
+
+General
+    Board Size, 6000milsx4000mils
+    Components on board, 65
+count : 2
+
+Routing Information
+    Routing completion, 100.00%
+    Connections, 217
+    Connections routed, 217
+    Connections remaining, 0
+count : 4
+
+Layer, Arcs, Pads, Vias, Tracks, Texts, Fills, Regions, ComponentBodies
+    Top Layer, 0, 233, 0, 647, 0, 0, 0, 0
+    Bottom Layer, 0, 90, 0, 407, 0, 0, 0, 0
+    Mechanical 1, 0, 0, 0, 40, 4, 0, 1, 0
+    Top Assembly, 0, 0, 0, 0, 0, 0, 0, 0
+    Bottom Assembly, 26, 0, 0, 1931, 0, 0, 0, 0
+    Mechanical 4, 3, 0, 0, 14, 0, 0, 0, 0
+    Mechanical 5, 0, 0, 0, 0, 0, 0, 0, 0
+    Mechanical 6, 0, 0, 0, 0, 0, 0, 0, 0
+    Mechanical 7, 0, 0, 0, 0, 0, 0, 0, 0
+    Mechanical 8, 13, 0, 0, 0, 0, 0, 0, 0
+    Mechanical 12, 0, 0, 0, 0, 0, 0, 0, 0
+    Mechanical 13, 4, 0, 0, 174, 0, 0, 6, 3
+    Mechanical 15, 4, 0, 0, 171, 0, 0, 15, 0
+    Mechanical 18, 0, 0, 0, 12, 0, 0, 0, 0
+    Mechanical 19, 0, 0, 0, 8, 0, 0, 0, 0
+    Multi-Layer, 0, 56, 101, 0, 0, 0, 1, 0
+    Top Paste, 0, 0, 0, 0, 0, 0, 9, 0
+    Top Overlay, 14, 0, 0, 126, 68, 0, 1, 0
+    Top Solder, 0, 0, 0, 0, 0, 0, 7, 0
+    Bottom Solder, 0, 0, 0, 0, 0, 0, 0, 0
+    Bottom Overlay, 2, 0, 0, 69, 62, 0, 0, 0
+    Bottom Paste, 0, 0, 0, 0, 0, 0, 2, 0
+    Drill Guide, 0, 0, 0, 0, 0, 0, 0, 0
+    Keep-Out Layer, 8, 0, 0, 4, 0, 0, 0, 0
+    Drill Drawing, 0, 0, 0, 0, 0, 0, 0, 0
+count : 25

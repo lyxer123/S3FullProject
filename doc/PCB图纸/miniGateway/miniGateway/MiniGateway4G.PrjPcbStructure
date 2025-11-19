@@ -1,0 +1,5 @@
+Record=TopLevelDocument|FileName=CANBUS.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=CANBUS.SchDoc|FileName=MCU.SchDoc|SheetNumber=5
+Record=NoMainPathDocument|SourceDocument=CANBUS.SchDoc|FileName=My4G.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=CANBUS.SchDoc|FileName=POWER.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=CANBUS.SchDoc|FileName=RS485.SchDoc|SheetNumber=3

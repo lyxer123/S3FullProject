@@ -1,0 +1,51 @@
+{
+    "serverConfig": {
+        "mqttHost": "47.108.226.28",
+        "mqttPort": 1883,
+        "myIOTServer": "http://pay.bldxny.com:8080/iot/tool/ntp?deviceSendTime=88888"
+    },
+    "deviceConfig": {
+        "deviceNum": "D1UX3HYYRJ7V",
+        "userId": "1",
+        "productId": "153",
+        "mqttUserName": "myChargingSpot",
+        "mqttPwd": "PPWFKRV28D06M50N",
+        "mqttSecret": "K8J7726I58KRYA7B",
+        "authCode": "",
+        "wumei_iv": "wumei-smart-open",
+        "latitude": 0,
+        "longitude": 0
+    },
+    "mqttTopics": {
+        "subscribe": [
+            {"sInfoTopic": "/153/D1UX3HYYRJ7V/info/get"},
+            {"sOtaTopic": "/153/D1UX3HYYRJ7V/ota/get"},
+            {"sNtpTopic": "/153/D1UX3HYYRJ7V/ntp/get"},
+            {"sPropertyTopic": "/153/D1UX3HYYRJ7V/property/get"},
+            {"sFunctionTopic": "/153/D1UX3HYYRJ7V/function/get"},
+            {"sPropertyOnline": "/153/D1UX3HYYRJ7V/property-online/get"},
+            {"sFunctionOnline": "/153/D1UX3HYYRJ7V/function-online/get"},
+            {"sMonitorTopic": "/153/D1UX3HYYRJ7V/monitor/get"}
+        ],
+        "publish": [
+            {"pInfoTopic": "/153/D1UX3HYYRJ7V/info/post"},
+            {"pNtpTopic": "/153/D1UX3HYYRJ7V/ntp/post"},
+            {"pPropertyTopic": "/153/D1UX3HYYRJ7V/property/post"},
+            {"pFunctionTopic": "/153/D1UX3HYYRJ7V/function/post"},
+            {"pMonitorTopic": "/153/D1UX3HYYRJ7V/monitor/post"},
+            {"pEventTopic": "/153/D1UX3HYYRJ7V/event/post"}
+        ]
+    },
+    "commandFormat": [ 
+        {"id":"Switch","remark":"设备定时","value":"0","function":"write","parameters":{"nodeId":"2","functionCode":"3","address":28,"quantity":1,"data":"0"}},
+        {"id":"Switch","remark":"设备定时","value":"1","function":"write","parameters":{"nodeId":"2","functionCode":"3","address":28,"quantity":1,"data":"1"}},
+        {"id":"Switch","value":"0","function":"write","parameters":{"nodeId":"2","functionCode":"3","address":28,"quantity":1,"data":"0"}},
+        {"id":"Switch","value":"1","function":"write","parameters":{"nodeId":"2","functionCode":"3","address":28,"quantity":1,"data":"1"}},
+        {"count":0,"interval":1000,"function":"noop","parameters":{}},
+        {"Select":"1","function":"IICTFTdisplay","parameters":{"Line":"1","data":"select 1"}},
+        {"Select":"2","function":"IICTFTdisplay","parameters":{"Line":"2","data":"select 2"}},
+        {"Select":"3","function":"IICTFTdisplay","parameters":{"Line":"3","data":"select 3"}},
+        {"Select":"4","function":"IICTFTdisplay","parameters":{"Line":"4","data":"select 4"}},                     
+        {"count":60,"interval":1000,"function":"read","parameters":{"nodeId":"1","functionCode":"3","address":3,"quantity":1,"customKey":"priThreePhaseVoltage","endian":"-","Coefficient":"0.1","number":"1000"}}
+    ]
+}

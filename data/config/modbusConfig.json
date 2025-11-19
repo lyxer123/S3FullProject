@@ -1,0 +1,63 @@
+{
+  "Modbus":[
+      {
+          "Type":"RTU",
+          "PollingInterval":30000,
+          "RetryCount":20,
+          "RetryInterval":100,
+          "BaudRate":9600,
+          "Config":"SERIAL_8E1",
+          "HardwareSerial":2,
+          "Ops":[
+              {
+                  "PollingInterval":1000,
+                  "SlaveId":1,
+                  "NeedNTP":1,
+                  "NeedId":0,  
+                  "AllinOne":[
+                    {
+                        "Function":4,
+                        "Address":400,
+                        "Len":1,
+                        "DataType":"Int16",
+                        "endian":"-",
+                        "Coefficient": 0.1,
+                        "Offset": 0,
+                        "DisplayName":"priThreePhaseVoltage"
+                    },
+                    {
+                        "Function":4,
+                        "Address":401,
+                        "Len":1,
+                        "DataType":"Int16",
+                        "endian":"-",
+                        "Coefficient": 0.01,
+                        "Offset": 0,
+                        "DisplayName":"priThreePhaseCurrent"
+                    },
+                    {
+                        "Function":4,
+                        "Address":402,
+                        "Len":1,
+                        "DataType":"Int16",
+                        "endian":"-",
+                        "Coefficient": 1,
+                        "Offset": 0,
+                        "DisplayName":"priThreePhasePower"
+                    },
+                    {
+                        "Function":4,
+                        "Address":405,
+                        "Len":2,
+                        "DataType":"Int32",
+                        "endian":"-",
+                        "Coefficient": 0.01,
+                        "Offset": 0,
+                        "DisplayName":"priThreePhaseEnergy"
+                    }
+                ]
+              }
+          ]
+      }
+  ]
+}

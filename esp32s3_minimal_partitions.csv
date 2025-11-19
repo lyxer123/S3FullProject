@@ -1,0 +1,10 @@
+# Name,   Type, SubType, Offset,  Size, Flags
+# ESP32-S3 Minimal Partition Table (2MB-4MB compatible)
+# NVS Partition
+nvs,      data, nvs,     0x9000,  0x5000,
+# PHY Init Data
+phy_init, data, phy,     0xE000,  0x1000,
+# Factory APP (No OTA, single partition)
+factory,  app,  factory, 0x10000, 0x1F0000,
+# LittleFS File System
+spiffs,   data, spiffs,  0x200000,0x1F0000,

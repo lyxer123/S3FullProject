@@ -1,0 +1,52 @@
+{
+  "DLT645": [
+    {
+      "Type": "DLT645-2007",
+      "PollingInterval": 60000,
+      "RetryCount": 5,
+      "RetryInterval": 200,
+      "BaudRate": 9600,
+      "Config": "SERIAL_8E1",
+      "HardwareSerial": 2,
+      "DREPin": 42,
+      "Ops": [
+        {
+          "PollingInterval": 60000,
+          "MeterAddress": "781062211123",
+          "NeedNTP": 1,
+          "NeedId": 0,
+          "AllinOne": [
+            {
+              "DI": "00010102",
+              "DisplayName": "priThreePhaseVoltageA",
+              "DataType": "Voltage",
+              "Unit": "V",
+              "Factor": 0.1
+            },
+            {
+              "DI": "00010202",
+              "DisplayName": "priThreePhaseCurrentA",
+              "DataType": "Current",
+              "Unit": "A",
+              "Factor": 0.001
+            },
+            {
+              "DI": "00010302",
+              "DisplayName": "priThreePhasePowerA",
+              "DataType": "Power",
+              "Unit": "kW",
+              "Factor": 0.0001
+            },
+            {
+              "DI": "00000000",
+              "DisplayName": "priThreePhaseEnergyA",
+              "DataType": "Energy",
+              "Unit": "kWh",
+              "Factor": 0.01
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
